@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&amp;family=DM+Serif+Display&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="#1a1714"/>
+
+  <!-- === ANVIL === -->
+  <!-- Anvil base (wide foot) -->
+  <path d="M140 310 L145 340 L255 340 L260 310 Z" fill="#c4754b" opacity="0.9"/>
+  <!-- Anvil waist -->
+  <rect x="165" y="280" width="70" height="32" rx="2" fill="#d4845a"/>
+  <!-- Anvil body (main mass) -->
+  <path d="M130 250 L130 282 L270 282 L270 250 L130 250 Z" fill="#d4845a"/>
+  <!-- Anvil face (top flat surface) -->
+  <rect x="125" y="242" width="150" height="12" rx="1" fill="#e0956a"/>
+  <!-- Anvil horn (pointed end, left side) -->
+  <path d="M125 248 L80 252 L125 256 Z" fill="#d4845a"/>
+  <!-- Anvil hardy hole -->
+  <rect x="250" y="244" width="8" height="8" fill="#1a1714"/>
+  <!-- Anvil pritchel hole -->
+  <circle cx="240" cy="248" r="3" fill="#1a1714"/>
+
+  <!-- Subtle anvil highlight -->
+  <rect x="125" y="242" width="150" height="3" rx="1" fill="#eaa87e" opacity="0.5"/>
+
+  <!-- === HOUSE FRAME sitting on anvil === -->
+  <!-- Left wall stud -->
+  <line x1="152" y1="240" x2="152" y2="160" stroke="#f0f0e8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right wall stud -->
+  <line x1="248" y1="240" x2="248" y2="160" stroke="#f0f0e8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Center stud -->
+  <line x1="200" y1="240" x2="200" y2="160" stroke="#f0f0e8" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Top plate (horizontal beam connecting wall tops) -->
+  <line x1="145" y1="160" x2="255" y2="160" stroke="#f0f0e8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Bottom plate (resting on anvil) -->
+  <line x1="145" y1="240" x2="255" y2="240" stroke="#f0f0e8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Mid noggin (horizontal brace) -->
+  <line x1="152" y1="200" x2="200" y2="200" stroke="#f0f0e8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="200" x2="248" y2="200" stroke="#f0f0e8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Roof rafters (A-frame) -->
+  <line x1="140" y1="162" x2="200" y2="100" stroke="#f0f0e8" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="260" y1="162" x2="200" y2="100" stroke="#f0f0e8" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Ridge beam peak -->
+  <circle cx="200" cy="100" r="4" fill="#d4845a"/>
+
+  <!-- Collar tie (horizontal brace in roof) -->
+  <line x1="165" y1="135" x2="235" y2="135" stroke="#f0f0e8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Small ember sparks around the junction of frame and anvil -->
+  <circle cx="135" cy="235" r="2" fill="#e8834a" opacity="0.8"/>
+  <circle cx="270" cy="232" r="1.5" fill="#e8834a" opacity="0.6"/>
+  <circle cx="145" cy="225" r="1.2" fill="#f0a060" opacity="0.5"/>
+  <circle cx="260" cy="222" r="1.8" fill="#e8834a" opacity="0.7"/>
+
+  <!-- === TYPOGRAPHY === -->
+  <!-- THE CHIPPY -->
+  <text x="200" y="390" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="700" font-size="38" letter-spacing="6">THE CHIPPY</text>
+
+  <!-- Precision Carpentry -->
+  <text x="200" y="418" text-anchor="middle" fill="#d4845a" font-family="'DM Serif Display', serif" font-size="18" letter-spacing="2">Precision Carpentry</text>
+
+  <!-- Thin divider line -->
+  <line x1="155" y1="365" x2="245" y2="365" stroke="#d4845a" stroke-width="1" opacity="0.6"/>
+</svg>

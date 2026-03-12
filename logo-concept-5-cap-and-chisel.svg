@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=DM+Serif+Display&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="#1a1714"/>
+
+  <!-- ============================================
+       FLAT CAP — centered, prominent
+       ============================================ -->
+  <g transform="translate(200, 145)">
+    <!-- Cap crown -->
+    <path d="M-78 12 C-78 12 -68 -42 0 -52 C68 -42 78 12 78 12 L83 17 L-83 17 Z" fill="#5c4a3a"/>
+
+    <!-- Panel seams -->
+    <path d="M0 -52 L0 15" stroke="#4a3a2c" stroke-width="1" opacity="0.5"/>
+    <path d="M0 -52 L-48 15" stroke="#4a3a2c" stroke-width="0.8" opacity="0.35"/>
+    <path d="M0 -52 L48 15" stroke="#4a3a2c" stroke-width="0.8" opacity="0.35"/>
+
+    <!-- Fabric texture curves -->
+    <path d="M-50 -25 C-30 -30 30 -30 50 -25" stroke="#4a3a2c" stroke-width="0.5" fill="none" opacity="0.25"/>
+    <path d="M-60 -8 C-35 -14 35 -14 60 -8" stroke="#4a3a2c" stroke-width="0.5" fill="none" opacity="0.2"/>
+
+    <!-- Cap highlight -->
+    <path d="M-30 -38 C-20 -42 25 -43 40 -35" stroke="#6d5a48" stroke-width="1.5" fill="none" opacity="0.35"/>
+
+    <!-- Button -->
+    <circle cx="0" cy="-52" r="3.5" fill="#4a3a2c"/>
+    <circle cx="0" cy="-52" r="2" fill="#5c4a3a" stroke="#3a2c20" stroke-width="0.5"/>
+
+    <!-- Band -->
+    <rect x="-83" y="14" width="166" height="5" fill="#4a3a2c" opacity="0.6"/>
+
+    <!-- Brim -->
+    <path d="M-83 17 L-98 28 C-98 32 -68 36 -25 34 L-5 31 L-83 17 Z" fill="#4a3a2c"/>
+    <path d="M-83 17 L-93 26 C-88 29 -58 32 -25 31 L-15 29 L-83 17 Z" fill="#5c4a3a" opacity="0.35"/>
+  </g>
+
+  <!-- ============================================
+       CROSSED TRIM TOOLS — chisel + trim hammer
+       Smaller, sitting below the cap
+       ============================================ -->
+  <g transform="translate(200, 235)">
+
+    <!-- Trim chisel (left diagonal) -->
+    <g transform="rotate(-35)">
+      <!-- Blade -->
+      <path d="M-3 -40 L-6 -25 L6 -25 L3 -40 Z" fill="#b8b0a0"/>
+      <path d="M-3 -40 L-1 -40 L4 -25 L6 -25 L3 -40 Z" fill="#d0c8b8" opacity="0.4"/>
+      <!-- Ferrule -->
+      <rect x="-5" y="-25" width="10" height="6" rx="1" fill="#a89880"/>
+      <!-- Handle -->
+      <rect x="-4" y="-19" width="8" height="52" rx="3" fill="#8b6e4e"/>
+      <line x1="-2" y1="-5" x2="-2" y2="30" stroke="#7a5d3e" stroke-width="0.5" opacity="0.3"/>
+      <line x1="1" y1="-8" x2="1" y2="28" stroke="#7a5d3e" stroke-width="0.5" opacity="0.25"/>
+      <!-- Butt cap -->
+      <rect x="-4.5" y="31" width="9" height="3" rx="1" fill="#a89880" opacity="0.5"/>
+    </g>
+
+    <!-- Trim/finish hammer (right diagonal) -->
+    <g transform="rotate(35)">
+      <!-- Handle -->
+      <rect x="-3.5" y="-15" width="7" height="55" rx="2.5" fill="#8b6e4e"/>
+      <line x1="-1.5" y1="5" x2="-1.5" y2="38" stroke="#7a5d3e" stroke-width="0.5" opacity="0.3"/>
+      <line x1="1" y1="3" x2="1" y2="36" stroke="#7a5d3e" stroke-width="0.5" opacity="0.25"/>
+      <!-- Head — smaller finish hammer -->
+      <rect x="-14" y="-24" width="28" height="10" rx="1.5" fill="#b8b0a0"/>
+      <rect x="-14" y="-24" width="28" height="3" rx="1.5" fill="#d0c8b8" opacity="0.4"/>
+      <!-- Claw (small, curved — finish hammer style) -->
+      <path d="M12 -16 L18 -28 L16 -29 L10 -18" fill="#a8a090"/>
+    </g>
+
+    <!-- Small ember spark at crossing -->
+    <circle cx="0" cy="2" r="3.5" fill="#e8834a" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.25;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-4" cy="-3" r="1.2" fill="#f0a060" opacity="0.45"/>
+    <circle cx="5" cy="-2" r="1" fill="#f0a060" opacity="0.4"/>
+  </g>
+
+  <!-- ============================================
+       TYPOGRAPHY
+       ============================================ -->
+  <line x1="130" y1="340" x2="270" y2="340" stroke="#d4845a" stroke-width="0.8" opacity="0.4"/>
+
+  <text x="200" y="375" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="700" font-size="36" letter-spacing="5">THE CHIPPY</text>
+
+  <text x="200" y="400" text-anchor="middle" fill="#d4845a" font-family="'DM Serif Display', serif" font-size="17" letter-spacing="2">Precision Carpentry</text>
+
+  <line x1="150" y1="415" x2="250" y2="415" stroke="#d4845a" stroke-width="0.5" opacity="0.3"/>
+
+  <text x="200" y="438" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="400" font-size="9" letter-spacing="4" opacity="0.35">TRIM &amp; FINISH  ·  NEW BRUNSWICK</text>
+</svg>

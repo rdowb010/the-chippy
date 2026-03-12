@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=DM+Serif+Display&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="#1a1714"/>
+
+  <!-- ============================================
+       CIRCULAR ROUNDEL / STAMP BADGE
+       Text wraps around a circle with the cap inside
+       ============================================ -->
+  <g transform="translate(200, 210)">
+
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#d4845a" stroke-width="2"/>
+    <!-- Inner ring -->
+    <circle cx="0" cy="0" r="108" fill="none" stroke="#d4845a" stroke-width="0.8" opacity="0.4"/>
+
+    <!-- Curved text — top arc: "THE CHIPPY" -->
+    <path id="topArc" d="M-95 0 A95 95 0 0 1 95 0" fill="none"/>
+    <text fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="700" font-size="20" letter-spacing="8">
+      <textPath href="#topArc" startOffset="50%" text-anchor="middle">THE CHIPPY</textPath>
+    </text>
+
+    <!-- Curved text — bottom arc: "PRECISION CARPENTRY" -->
+    <path id="bottomArc" d="M-92 12 A92 92 0 0 0 92 12" fill="none"/>
+    <text fill="#d4845a" font-family="'DM Sans', sans-serif" font-weight="500" font-size="11" letter-spacing="5">
+      <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">PRECISION CARPENTRY</textPath>
+    </text>
+
+    <!-- Small dots as dividers on the sides -->
+    <circle cx="-110" cy="6" r="2.5" fill="#d4845a" opacity="0.7"/>
+    <circle cx="110" cy="6" r="2.5" fill="#d4845a" opacity="0.7"/>
+
+    <!-- ============================================
+         FLAT CAP — centred inside the roundel
+         ============================================ -->
+    <g transform="translate(0, -5)">
+      <!-- Cap crown -->
+      <path d="M-62 15 C-62 15 -53 -30 0 -38 C53 -30 62 15 62 15 L66 19 L-66 19 Z" fill="#5c4a3a"/>
+
+      <!-- Panel seams -->
+      <path d="M0 -38 L0 17" stroke="#4a3a2c" stroke-width="0.9" opacity="0.5"/>
+      <path d="M0 -38 L-38 17" stroke="#4a3a2c" stroke-width="0.7" opacity="0.3"/>
+      <path d="M0 -38 L38 17" stroke="#4a3a2c" stroke-width="0.7" opacity="0.3"/>
+
+      <!-- Fabric texture -->
+      <path d="M-42 -15 C-25 -20 25 -20 42 -15" stroke="#4a3a2c" stroke-width="0.5" fill="none" opacity="0.2"/>
+      <path d="M-50 2 C-30 -4 30 -4 50 2" stroke="#4a3a2c" stroke-width="0.5" fill="none" opacity="0.18"/>
+
+      <!-- Highlight -->
+      <path d="M-22 -28 C-12 -32 20 -32 32 -26" stroke="#6d5a48" stroke-width="1.3" fill="none" opacity="0.35"/>
+
+      <!-- Button -->
+      <circle cx="0" cy="-38" r="3.2" fill="#4a3a2c"/>
+      <circle cx="0" cy="-38" r="2" fill="#5c4a3a" stroke="#3a2c20" stroke-width="0.4"/>
+
+      <!-- Band -->
+      <rect x="-66" y="17" width="132" height="4.5" fill="#4a3a2c" opacity="0.6"/>
+
+      <!-- Brim -->
+      <path d="M-66 19 L-80 28 C-80 31 -55 34 -20 32 L-2 30 L-66 19 Z" fill="#4a3a2c"/>
+      <path d="M-66 19 L-75 27 C-72 29 -50 31 -20 30 L-8 29 L-66 19 Z" fill="#5c4a3a" opacity="0.3"/>
+    </g>
+
+    <!-- ============================================
+         CROSSED TRIM PIECES below the cap
+         Two pieces of moulding forming an X
+         ============================================ -->
+    <g transform="translate(0, 52)">
+      <!-- Left moulding piece -->
+      <g transform="rotate(-25)">
+        <rect x="-2.5" y="-22" width="5" height="44" rx="1" fill="#b8b0a0" opacity="0.6"/>
+        <rect x="-1.5" y="-22" width="1.5" height="44" rx="0.5" fill="#d0c8b8" opacity="0.2"/>
+      </g>
+      <!-- Right moulding piece -->
+      <g transform="rotate(25)">
+        <rect x="-2.5" y="-22" width="5" height="44" rx="1" fill="#b8b0a0" opacity="0.6"/>
+        <rect x="-1.5" y="-22" width="1.5" height="44" rx="0.5" fill="#d0c8b8" opacity="0.2"/>
+      </g>
+      <!-- Ember at crossing -->
+      <circle cx="0" cy="0" r="3" fill="#e8834a" opacity="0.55">
+        <animate attributeName="opacity" values="0.55;0.2;0.55" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+  </g>
+
+  <!-- ============================================
+       BOTTOM TEXT — outside the roundel
+       ============================================ -->
+  <text x="200" y="380" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="400" font-size="9" letter-spacing="4" opacity="0.35">TRIM &amp; FINISH  ·  NEW BRUNSWICK</text>
+
+  <!-- Subtle tagline -->
+  <line x1="140" y1="395" x2="260" y2="395" stroke="#d4845a" stroke-width="0.5" opacity="0.2"/>
+  <text x="200" y="418" text-anchor="middle" fill="#d4845a" font-family="'DM Serif Display', serif" font-size="13" letter-spacing="3" opacity="0.5">Est. 2026</text>
+</svg>

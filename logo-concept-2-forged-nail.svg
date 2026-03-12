@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&amp;family=DM+Serif+Display&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="#1a1714"/>
+
+  <!-- === FORGED NAIL (angled ~15 degrees) === -->
+  <g transform="translate(200, 180) rotate(-12)">
+    <!-- Nail shaft — tapered like a hand-forged nail -->
+    <path d="M-4 -10 L-3.2 90 L0 120 L3.2 90 L4 -10 Z" fill="#d4845a"/>
+
+    <!-- Hammer texture marks on shaft (forged look) -->
+    <line x1="-3" y1="10" x2="3" y2="12" stroke="#1a1714" stroke-width="0.6" opacity="0.3"/>
+    <line x1="-2.8" y1="25" x2="3.2" y2="26" stroke="#1a1714" stroke-width="0.5" opacity="0.25"/>
+    <line x1="-2.5" y1="42" x2="2.8" y2="43" stroke="#1a1714" stroke-width="0.6" opacity="0.3"/>
+    <line x1="-2.2" y1="58" x2="2.5" y2="59" stroke="#1a1714" stroke-width="0.5" opacity="0.2"/>
+    <line x1="-1.8" y1="75" x2="2" y2="76" stroke="#1a1714" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- Nail head — slightly irregular forged shape -->
+    <ellipse cx="0" cy="-16" rx="14" ry="6" fill="#e0956a"/>
+    <!-- Top surface of head -->
+    <ellipse cx="0" cy="-19" rx="14" ry="6" fill="#eaa87e"/>
+    <!-- Hammer strike marks on head -->
+    <ellipse cx="-2" cy="-19" rx="8" ry="3.5" fill="#d4845a" opacity="0.3"/>
+    <circle cx="3" cy="-20" r="2" fill="#c4754b" opacity="0.2"/>
+
+    <!-- Shaft highlight (metallic sheen) -->
+    <line x1="1" y1="-8" x2="0.5" y2="95" stroke="#eaa87e" stroke-width="1.2" opacity="0.3"/>
+
+    <!-- Point highlight -->
+    <path d="M0 115 L1.5 95 L0 98 Z" fill="#eaa87e" opacity="0.25"/>
+  </g>
+
+  <!-- Small ember sparks scattered around the nail -->
+  <circle cx="155" cy="160" r="2" fill="#e8834a" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="240" cy="200" r="1.5" fill="#f0a060" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="170" cy="250" r="1.8" fill="#e8834a" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="235" cy="145" r="1.2" fill="#f0a060" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- === TYPOGRAPHY === -->
+  <!-- "THE" small above -->
+  <text x="200" y="370" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="500" font-size="14" letter-spacing="8">THE</text>
+
+  <!-- "CH PPY" with the nail head serving as the dot on the I -->
+  <!-- We spell out C H I P P Y but the I has the nail as its dot -->
+  <text x="200" y="410" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="700" font-size="48" letter-spacing="5">CHIPPY</text>
+
+  <!-- Nail-as-dot accent: a small forged nail head shape over the I -->
+  <!-- The I in CHIPPY is approximately at x=178 -->
+  <g transform="translate(178, 385) rotate(-12)">
+    <ellipse cx="0" cy="0" rx="5" ry="2.5" fill="#d4845a"/>
+    <ellipse cx="0" cy="-1" rx="5" ry="2.5" fill="#e0956a"/>
+  </g>
+
+  <!-- Thin divider -->
+  <line x1="140" y1="425" x2="260" y2="425" stroke="#d4845a" stroke-width="1" opacity="0.5"/>
+
+  <!-- "Precision Carpentry" -->
+  <text x="200" y="448" text-anchor="middle" fill="#d4845a" font-family="'DM Serif Display', serif" font-size="18" letter-spacing="2">Precision Carpentry</text>
+</svg>

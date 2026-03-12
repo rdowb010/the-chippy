@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=DM+Serif+Display&amp;display=swap');
+    </style>
+    <!-- Subtle Union Jack pattern used as a texture fill -->
+    <pattern id="unionjack" x="0" y="0" width="40" height="28" patternUnits="userSpaceOnUse">
+      <!-- Blue field -->
+      <rect width="40" height="28" fill="#2a3a5c" opacity="0.15"/>
+      <!-- Diagonal whites -->
+      <line x1="0" y1="0" x2="40" y2="28" stroke="#f0f0e8" stroke-width="2.5" opacity="0.06"/>
+      <line x1="40" y1="0" x2="0" y2="28" stroke="#f0f0e8" stroke-width="2.5" opacity="0.06"/>
+      <!-- Diagonal reds -->
+      <line x1="0" y1="0" x2="40" y2="28" stroke="#c4564a" stroke-width="1" opacity="0.06"/>
+      <line x1="40" y1="0" x2="0" y2="28" stroke="#c4564a" stroke-width="1" opacity="0.06"/>
+      <!-- White cross -->
+      <rect x="17" y="0" width="6" height="28" fill="#f0f0e8" opacity="0.06"/>
+      <rect x="0" y="11" width="40" height="6" fill="#f0f0e8" opacity="0.06"/>
+      <!-- Red cross -->
+      <rect x="18.5" y="0" width="3" height="28" fill="#c4564a" opacity="0.07"/>
+      <rect x="0" y="12.5" width="40" height="3" fill="#c4564a" opacity="0.07"/>
+    </pattern>
+
+    <!-- Clipping mask for the flat cap fabric texture -->
+    <clipPath id="capClip">
+      <path d="M120 175 C120 175 130 120 200 110 C270 120 280 175 280 175 L285 180 L115 180 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="#1a1714"/>
+
+  <!-- ============================================
+       FLAT CAP
+       ============================================ -->
+  <g transform="translate(0, 10)">
+
+    <!-- Cap body / crown -->
+    <path d="M120 175 C120 175 130 118 200 108 C270 118 280 175 280 175 L285 180 L115 180 Z" fill="#5c4a3a"/>
+
+    <!-- Union Jack texture overlay on cap -->
+    <rect x="100" y="100" width="200" height="90" fill="url(#unionjack)" clip-path="url(#capClip)"/>
+
+    <!-- Cap panel seams (8-panel style) -->
+    <path d="M200 108 L200 178" stroke="#4a3a2c" stroke-width="1" opacity="0.5"/>
+    <path d="M200 108 L150 178" stroke="#4a3a2c" stroke-width="0.8" opacity="0.35"/>
+    <path d="M200 108 L250 178" stroke="#4a3a2c" stroke-width="0.8" opacity="0.35"/>
+
+    <!-- Cap button on top -->
+    <circle cx="200" cy="108" r="4" fill="#4a3a2c"/>
+    <circle cx="200" cy="108" r="2.5" fill="#5c4a3a" stroke="#3a2c20" stroke-width="0.5"/>
+
+    <!-- Brim / peak -->
+    <path d="M115 180 L100 192 C100 196 130 200 175 198 L195 195 L115 180 Z" fill="#4a3a2c"/>
+    <!-- Brim highlight -->
+    <path d="M115 180 L105 190 C110 193 140 196 175 195 L185 193 L115 180 Z" fill="#5c4a3a" opacity="0.4"/>
+
+    <!-- Band where brim meets crown -->
+    <path d="M115 178 L285 178 L285 183 L115 183 Z" fill="#4a3a2c" opacity="0.6"/>
+
+    <!-- Subtle cap highlight (top) -->
+    <path d="M170 120 C175 115 220 113 240 122" stroke="#6d5a48" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+    <!-- Cap fabric texture lines -->
+    <path d="M140 140 C160 135 240 135 260 140" stroke="#4a3a2c" stroke-width="0.5" fill="none" opacity="0.25"/>
+    <path d="M130 155 C155 148 245 148 270 155" stroke="#4a3a2c" stroke-width="0.5" fill="none" opacity="0.2"/>
+  </g>
+
+  <!-- ============================================
+       FRAMING HAMMER (primary tool — carpentry focus)
+       Positioned below the cap, centered
+       ============================================ -->
+  <g transform="translate(200, 280)">
+    <!-- Handle (wood grain feel) -->
+    <rect x="-3.5" y="-25" width="7" height="80" rx="2.5" fill="#8b6e4e"/>
+    <!-- Handle grain lines -->
+    <line x1="-2" y1="10" x2="-2" y2="55" stroke="#7a5d3e" stroke-width="0.5" opacity="0.4"/>
+    <line x1="1" y1="5" x2="1" y2="50" stroke="#7a5d3e" stroke-width="0.5" opacity="0.3"/>
+
+    <!-- Hammer head -->
+    <rect x="-22" y="-35" width="44" height="12" rx="2" fill="#b8b0a0"/>
+    <!-- Head metallic highlight -->
+    <rect x="-22" y="-35" width="44" height="3" rx="2" fill="#d0c8b8" opacity="0.5"/>
+    <!-- Claw -->
+    <path d="M18 -25 L26 -38 L24 -40 L15 -28" fill="#a8a090"/>
+    <!-- Face -->
+    <rect x="-22" y="-35" width="5" height="12" rx="1" fill="#c8c0b0" opacity="0.5"/>
+
+    <!-- Subtle single forge spark near hammer head (the 25% blacksmithing nod) -->
+    <circle cx="-14" cy="-42" r="1.5" fill="#e8834a" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="10" cy="-43" r="1" fill="#f0a060" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.15;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ============================================
+       SMALL ANVIL SILHOUETTE (subtle blacksmithing nod)
+       Very understated, sits below the hammer
+       ============================================ -->
+  <g transform="translate(200, 345)" opacity="0.35">
+    <path d="M-20 0 L-22 8 L22 8 L20 0 Z" fill="#d4845a"/>
+    <rect x="-16" y="-4" width="32" height="5" rx="1" fill="#d4845a"/>
+    <path d="M-16 -2 L-24 0 L-16 2 Z" fill="#c4754b"/>
+  </g>
+
+  <!-- ============================================
+       TYPOGRAPHY
+       ============================================ -->
+
+  <!-- Decorative line -->
+  <line x1="130" y1="380" x2="270" y2="380" stroke="#d4845a" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- THE CHIPPY -->
+  <text x="200" y="415" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="700" font-size="36" letter-spacing="5">THE CHIPPY</text>
+
+  <!-- Precision Carpentry -->
+  <text x="200" y="442" text-anchor="middle" fill="#d4845a" font-family="'DM Serif Display', serif" font-size="17" letter-spacing="2">Precision Carpentry</text>
+
+  <!-- Subtle location line -->
+  <text x="200" y="468" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="400" font-size="9" letter-spacing="4" opacity="0.35">NEW BRUNSWICK, CANADA</text>
+</svg>

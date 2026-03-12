@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=DM+Serif+Display&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="#1a1714"/>
+
+  <!-- ============================================
+       LARGE "C" LETTERMARK WITH CAP ON TOP
+       The flat cap sits perched on the top curve of the C
+       ============================================ -->
+
+  <!-- The C letterform -->
+  <g transform="translate(200, 215)">
+    <!-- Large C — thick, bold, slightly rounded -->
+    <path d="
+      M45 -75
+      C15 -75 -65 -55 -65 0
+      C-65 55 15 75 45 75
+    " fill="none" stroke="#f0f0e8" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Subtle inner highlight on C -->
+    <path d="
+      M45 -75
+      C15 -75 -65 -55 -65 0
+      C-65 55 15 75 45 75
+    " fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.08"/>
+  </g>
+
+  <!-- ============================================
+       FLAT CAP — perched on the top-right of the C
+       Tilted slightly, like it's been placed there casually
+       ============================================ -->
+  <g transform="translate(240, 128) rotate(8)">
+    <!-- Cap crown — slightly smaller/jauntier -->
+    <path d="M-52 8 C-52 8 -45 -28 0 -35 C45 -28 52 8 52 8 L55 12 L-55 12 Z" fill="#5c4a3a"/>
+
+    <!-- Panel seams -->
+    <path d="M0 -35 L0 10" stroke="#4a3a2c" stroke-width="0.8" opacity="0.5"/>
+    <path d="M0 -35 L-32 10" stroke="#4a3a2c" stroke-width="0.6" opacity="0.3"/>
+    <path d="M0 -35 L32 10" stroke="#4a3a2c" stroke-width="0.6" opacity="0.3"/>
+
+    <!-- Fabric texture -->
+    <path d="M-35 -15 C-20 -19 20 -19 35 -15" stroke="#4a3a2c" stroke-width="0.5" fill="none" opacity="0.2"/>
+
+    <!-- Highlight -->
+    <path d="M-18 -26 C-10 -29 18 -30 28 -24" stroke="#6d5a48" stroke-width="1.2" fill="none" opacity="0.35"/>
+
+    <!-- Button -->
+    <circle cx="0" cy="-35" r="3" fill="#4a3a2c"/>
+    <circle cx="0" cy="-35" r="1.8" fill="#5c4a3a" stroke="#3a2c20" stroke-width="0.4"/>
+
+    <!-- Band -->
+    <rect x="-55" y="10" width="110" height="4" fill="#4a3a2c" opacity="0.6"/>
+
+    <!-- Brim -->
+    <path d="M-55 12 L-68 20 C-68 23 -45 26 -15 24 L0 22 L-55 12 Z" fill="#4a3a2c"/>
+    <path d="M-55 12 L-63 19 C-60 21 -40 23 -15 22 L-5 21 L-55 12 Z" fill="#5c4a3a" opacity="0.3"/>
+  </g>
+
+  <!-- ============================================
+       SMALL TRIM DETAIL — a piece of moulding profile
+       tucked into the bottom opening of the C
+       ============================================ -->
+  <g transform="translate(245, 290)" opacity="0.5">
+    <!-- Crown moulding profile cross-section -->
+    <path d="M0 0 L18 0 L18 -4 C14 -4 12 -10 8 -14 L4 -14 C2 -10 0 -4 0 -4 Z" fill="#d4845a"/>
+    <path d="M0 0 L18 0 L18 -2 L0 -2 Z" fill="#c4754b"/>
+  </g>
+
+  <!-- Single subtle ember -->
+  <circle cx="175" cy="215" r="2" fill="#e8834a" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ============================================
+       TYPOGRAPHY
+       ============================================ -->
+  <line x1="120" y1="335" x2="280" y2="335" stroke="#d4845a" stroke-width="0.8" opacity="0.35"/>
+
+  <text x="200" y="372" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="700" font-size="38" letter-spacing="5">THE CHIPPY</text>
+
+  <text x="200" y="400" text-anchor="middle" fill="#d4845a" font-family="'DM Serif Display', serif" font-size="17" letter-spacing="2">Precision Carpentry</text>
+
+  <line x1="145" y1="418" x2="255" y2="418" stroke="#d4845a" stroke-width="0.5" opacity="0.25"/>
+
+  <text x="200" y="442" text-anchor="middle" fill="#f0f0e8" font-family="'DM Sans', sans-serif" font-weight="400" font-size="9" letter-spacing="4" opacity="0.35">TRIM &amp; FINISH  ·  NEW BRUNSWICK</text>
+</svg>

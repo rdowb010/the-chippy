@@ -1,0 +1,6 @@
+.DS_Store
+*.zip
+*.pdf
+_template/
+the-chippy-carpentry/
+.claude/
