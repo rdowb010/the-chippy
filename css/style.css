@@ -196,6 +196,13 @@ p {
   margin: var(--space-md) auto 0;
 }
 
+.section-sub--hint {
+  font-size: 0.95rem;
+  font-style: italic;
+  opacity: 0.75;
+  margin-top: var(--space-sm);
+}
+
 
 /* ========================================
    Buttons
