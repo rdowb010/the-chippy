@@ -155,13 +155,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (isValid) {
-      form.innerHTML = `
-        <div class="form-success">
-          <h3>Thank You!</h3>
-          <p>Your project details have been received. We'll review them and get back to you within 24 hours.</p>
-        </div>
-      `;
-      form.closest('section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const submitBtn = form.querySelector('.btn-submit');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.innerHTML = `
+            <div class="form-success">
+              <h3>Thank You!</h3>
+              <p>Your project details have been received. We'll review them and get back to you within 24 hours.</p>
+            </div>
+          `;
+          form.closest('section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Your Project Details';
+          showError(submitBtn.parentNode, 'Something went wrong. Please try again.');
+        }
+      }).catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Your Project Details';
+        showError(submitBtn.parentNode, 'Something went wrong. Please try again.');
+      });
     } else {
       // Scroll to first error
       const firstError = form.querySelector('.form-error');

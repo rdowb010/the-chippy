@@ -297,9 +297,11 @@ p {
 }
 
 .logo-cap {
-  width: 30px;
-  height: auto;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .logo-text {
@@ -659,28 +661,12 @@ p {
   font-size: 0.98rem;
 }
 
-.about-image-placeholder {
+.about-image img {
+  width: 100%;
   aspect-ratio: 4 / 5;
-  background: var(--color-parchment);
+  object-fit: cover;
+  object-position: top;
   border-radius: var(--radius-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  border: 2px dashed var(--color-border-light);
-}
-
-.about-image-placeholder svg {
-  width: 64px;
-  height: 64px;
-  color: var(--color-timber);
-}
-
-.about-image-placeholder span {
-  font-size: 0.85rem;
-  color: var(--color-timber);
-  font-weight: 500;
 }
 
 /* Trust Badges */
@@ -1372,7 +1358,7 @@ fieldset.form-error {
     order: -1;
   }
 
-  .about-image-placeholder {
+  .about-image img {
     aspect-ratio: 16 / 9;
   }
 
